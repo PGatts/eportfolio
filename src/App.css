@@ -1,38 +1,204 @@
-.App {
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.trip-summary-container {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  /*border-radius: 8px;*/
+}
+
+/* Header Styles */
+.hero-section {
   text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #2c3e50, #4ca1af); /* A subtle gradient */
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-section p {
+  font-size: 1.2em;
+  opacity: 0.9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  margin: 20px auto;
+  max-width: 80%;
+  border-left: 5px solid #fff;
+  padding-left: 20px;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+/* Section Styles */
+.section-block {
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+
+.section-block h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.section-block h2::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #4ca1af;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-block p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* Image Placeholders and Galleries */
+.image-placeholder {
+  background-color: #eee;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #555;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill; /* Ensures images cover their container */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-placeholder.large-placeholder {
+  min-height: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.image-caption {
+  font-size: 0.9em;
+  color: #666;
+  padding: 0 5px 5px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 30px 20px;
+}
+
+.image-gallery.two-column {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.image-gallery.three-column {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Reflection Blocks */
+.reflection-block {
+  background-color: #eaf6f7; /* Light blue/green */
+  padding: 25px;
+  border-left: 5px solid #4ca1af;
+  border-radius: 8px;
+  margin-top: 30px;
+  font-style: italic;
+  color: #444;
+}
+
+.reflection-block h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.6em;
+}
+
+/* Lists in Skill/Achievement Section */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.content-grid.two-column {
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.grid-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.grid-item h3 {
+  color: #4ca1af;
+  margin-top: 0;
+  font-size: 1.8em;
+  border-bottom: 2px solid #e0f2f7;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.grid-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.grid-item li {
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  color: #777;
+  font-size: 0.9em;
 }
