@@ -158,10 +158,10 @@ function SouthAfricaTripSummary() {
             <img src="elephant.jpeg" alt="Elephant selfie" />
             <p className="image-caption">Up close and personal with an elephant</p>
           </div>
-          <div className="image-placeholder">
+          {/*<div className="image-placeholder">
             <img src="beach-day.jpg" alt="Beach day" />
             <p className="image-caption">Enjoying the day on the beach with friends</p>
-          </div>
+          </div>*/}
           <div className="image-placeholder">
             <img src="farm.jpeg" alt="Farm visit" />
             <p className="image-caption">Visiting the AFC Estate farm gave us extra motivation</p>
