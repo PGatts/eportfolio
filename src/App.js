@@ -12,8 +12,8 @@ function SouthAfricaTripSummary() {
           <p className="image-caption">Captivating view from Chapman's Peak Drive</p>
         </div>
         <blockquote>
-          "There is nothing like returning to a place that remains unchanged to find the ways in which you yourself have altered."
-          <cite>- Nelson Mandela</cite>
+          "Sometimes you don't quite realise what you have achieved until you look back."
+          <cite>- AB de Villiers</cite>
         </blockquote>
       </header>
 
@@ -158,10 +158,6 @@ function SouthAfricaTripSummary() {
             <img src="elephant.jpeg" alt="Elephant selfie" />
             <p className="image-caption">Up close and personal with an elephant</p>
           </div>
-          {/*<div className="image-placeholder">
-            <img src="beach-day.jpg" alt="Beach day" />
-            <p className="image-caption">Enjoying the day on the beach with friends</p>
-          </div>*/}
           <div className="image-placeholder">
             <img src="farm.jpeg" alt="Farm visit" />
             <p className="image-caption">Visiting the AFC Estate farm gave us extra motivation</p>
